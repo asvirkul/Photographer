@@ -1,15 +1,3 @@
-<?php 
-     $title = "Новое письма с сайта фотографа";
-     $to = "<asvirkul@gmail.com>";
-     $subject = "Новое письмо с фотографа";
-     $message = '<p>Имя человека:'.$_POST["name"].'</p><br/><p>Фамилия человека:'. $_POST["lastName"].'</p><br/>Email Человека:'. $_POST["email"] .'<br/> Сообщение Человека:'. 
-     $_POST["message"];
-     $headers  = "Content-type: text/html; charset=UTF-8 \r\n";
-     if ( isset($_POST["done"]) ) {
-         mail($to, $subject, $message, $headers);
-         header("Location:index.php");
-     }
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
